@@ -78,11 +78,11 @@ The [boostrap](https://getbootstrap.com) support is added via webjars (I added b
 
 Related to modularity, my idea is to deliver pippo-logview as a reusable component that is easily integrated into a Pippo application.
 So, this component (that any web component) contains:
-- some `css` static resources (`logview.css` available in `resources\css`)
-- some `javascript` static resources (`logview.js` available in `resources\js`)
+- some `css` static resources ([logview.css](https://github.com/decebals/pippo-logview/blob/master/src/main/resources/public/css/logview.css) available in `resources\css`)
+- some `javascript` static resources ([logview.js](https://github.com/decebals/pippo-logview/blob/master/src/main/resources/public/js/logview.js) available in `resources\js`)
 - some Pippo's routes available in `LogViewApplication`; here we can come with a (LogView)`RouteGroup` 
-- some `json` static resources (for example `logview-highlight.json` that is available in `conf` - I am not sure that is the correct folder)
-- some properties (embedded in this project directly in `application.properties` from `conf` )
+- some `json` static resources (for example [logview-highlight.json](https://github.com/decebals/pippo-logview/blob/master/src/main/resources/conf/logview-highlight.json) that is available in `conf` - I am not sure that is the correct folder)
+- some properties (embedded in this project directly in [application.properties](https://github.com/decebals/pippo-logview/blob/master/src/main/resources/conf/application.properties#L40) from `conf` )
 ```properties
 logview.tailer.file = app.log
 #logview.tailer.delayMillis = 1000
@@ -90,3 +90,4 @@ logview.tailer.file = app.log
 #logview.lines = 5000
 #logview.noindent = false
 ``` 
+  
