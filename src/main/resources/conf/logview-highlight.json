@@ -1,0 +1,10 @@
+{
+  "words": {
+    "WARN": "color: Orange; font-weight: bold;",
+    "DEBUG": "color: SteelBlue;"
+  },
+  "lines": {
+    "ERROR": "color: OrangeRed;",
+    "INFO": "color: OliveDrab;"
+  }
+}

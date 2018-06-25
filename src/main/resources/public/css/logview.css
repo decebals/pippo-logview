@@ -1,0 +1,25 @@
+.log {
+    white-space: pre-wrap;
+    color: #7F8289;
+    font-size: .85em;
+    background: inherit;
+    border: 0;
+    padding: 0;
+}
+
+.log .inner-line {
+    padding: 0 15px;
+    margin-left: 84pt;
+    text-indent: -84pt;
+    margin-bottom: 0;
+}
+
+.log .inner-line:empty::after {
+    content: '.';
+    visibility: hidden;
+}
+
+.log.no-indent .inner-line {
+    margin-left: 0;
+    text-indent: 0;
+}
