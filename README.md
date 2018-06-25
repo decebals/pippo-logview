@@ -3,8 +3,9 @@ A secondary goal of this project is to test the modularity in Pippo, to see if i
   
 ![Upload](screenshots/logview.png?raw=true)
   
-The code is trivial because it's very easy to add a web socket functionality with Pippo.
-All important code is available in [LogViewApplication.java](https://github.com/decebals/pippo-logview/blob/master/src/main/java/ro/pippo/logview/LogViewApplication.java).
+The code is trivial because it's very easy to add a web socket functionality with Pippo. 
+All important code is available in [LogViewApplication.java](https://github.com/decebals/pippo-logview/blob/master/src/main/java/ro/pippo/logview/LogViewApplication.java). 
+What is cool is that LogView is a server agnostic component. You can use it with Jetty, Undertow or Tomcat without to change something. You never touch the native WebSocket implementation for a particular server.
 
 ```java
 public class LogViewApplication extends Application {
