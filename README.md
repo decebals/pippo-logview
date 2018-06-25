@@ -75,3 +75,18 @@ public class LogViewApplication extends Application {
 ```
 
 The [boostrap](https://getbootstrap.com) support is added via webjars (I added boostrap to show you how easy is to add static web artifacts).
+
+Related to modularity, my idea is to deliver pippo-logview as a reusable component that is easily integrated into a Pippo application.
+So, this component (that any web component) contains:
+- some `css` static resources (`logview.css` available in `resources\css`)
+- some `javascript` static resources (`logview.js` available in `resources\js`)
+- some Pippo's routes available in `LogViewApplication`; here we can come with a (LogView)`RouteGroup` 
+- some `json` static resources (for example `logview-highlight.json` that is available in `conf` - I am not sure that is the correct folder)
+- some properties (embedded in this project directly in `application.properties` from `conf` )
+```properties
+logview.tailer.file = app.log
+#logview.tailer.delayMillis = 1000
+#logview.tailer.end = false
+#logview.lines = 5000
+#logview.noindent = false
+``` 
